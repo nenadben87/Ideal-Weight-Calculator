@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ideal Weight Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+  body{
+    background: #333;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+  
+  
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-8 col-md-6 col-lg-6 col-xl-4">
+        <h1 class="display-4 text-center mt-3 mb-3">Ideal Weight Calculator</h1>
+        <div class="card">
+          <div class="card-body">
+            <form id="form" name="frm">
+             <div class="form-group">
+               <h4>Select Your Gender</h4>
+               <select name="sel" id="gender-select" class="form-control">
+                 <option value="" id="male">Male</option>
+                 <option value="" id="female">Female</option>
+               </select>
+               
+             </div>
+
+             <div class="form-group">
+                <h4 class="text-secondary">Your Height (cm)</h4>
+                <input type="text" class="form-control" id="height-input">
+                <span class="text-danger"></span>
+              </div>
+              
+             <div class="form-group">
+                  <h4 class="text-secondary">Your Weight (kg)</h4>
+                  <input type="text" class="form-control" id="weight-input">
+                  <span class="text-danger"></span>
+                </div>
+            </form>
+
+            <button class="btn btn-primary" type="button" id="calculate-btn">Calculate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8 col-md-6 col-lg-6 col-xl-4 ">
+        <div class="card" id="output">
+          <p class="font-weight-bold"></p>
+        </div>
+      </div>
+   </div>
+
+   <div class="row">
+    <div class="col-sm-8 col-md-6 col-lg-6 col-xl-4">
+      <button class="btn btn-danger btn-block mt-2" id="again-btn">Calculate Again</button>
+    </div>
+  </div> 
+
+</div>
+
+  
+  <script src="app.js">
+    
+    </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</body>
+</html>
